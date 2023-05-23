@@ -1,10 +1,10 @@
 package com.example.ytshortsclone;
 
 public class Submission {
-    String mediaUrl;
-    String thumbnail;
-    String hyperlink;
-    String placeholderUrl;
+    private String mediaUrl;
+    private String thumbnail;
+    private String hyperlink;
+    private String placeholderUrl;
 
     public Submission(String mediaUrl, String thumbnail, String hyperlink, String placeholderUrl) {
         this.mediaUrl = mediaUrl;

@@ -1,8 +1,8 @@
 package com.example.ytshortsclone;
 
 public class Result {
-    String message;
-    Data data;
+    private String message;
+    private Data data;
 
     public Result(String message, Data data) {
         this.message = message;

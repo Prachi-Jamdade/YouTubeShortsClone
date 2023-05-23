@@ -3,9 +3,9 @@ package com.example.ytshortsclone;
 import java.util.ArrayList;
 
 public class Data {
-    ArrayList<VideoData> posts;
-    String page;
-    String offset;
+    private ArrayList<VideoData> posts;
+    private String page;
+    private String offset;
 
     public Data(ArrayList<VideoData> posts, String page, String offset) {
         this.posts = posts;
