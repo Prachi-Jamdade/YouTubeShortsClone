@@ -1,6 +1,9 @@
 # YouTubeShortsClone 
 
-![YoutubeAnimationGIF](https://github.com/Prachi-Jamdade/YouTubeShortsClone/assets/94190717/d1fc1365-41fc-44b4-9623-47dba8caaef7)
+
+https://github.com/Prachi-Jamdade/YouTubeShortsClone/assets/94190717/5fe767b3-3d14-46f9-a15d-cd7682d2365c
+
+
 
 To Clone the Repo -
 
