@@ -7,9 +7,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Toast;
 
-import com.example.ytshortsclone.databinding.ActivityMainBinding;
+import com.example.ytshortsclone.databinding.ActivityDisplayShortsBinding;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
@@ -19,9 +18,9 @@ import retrofit2.Callback;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class MainActivity extends AppCompatActivity {
+public class DisplayShortsActivity extends AppCompatActivity {
 
-    private ActivityMainBinding mBinding;
+    private ActivityDisplayShortsBinding mBinding;
     private ShortsAdapter shortsAdapter;
     private ArrayList<VideoData> postsList;
     private String BASE_URL = "https://internship-service.onrender.com/videos/";
@@ -34,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        mBinding = ActivityMainBinding.inflate(getLayoutInflater());
+        mBinding = ActivityDisplayShortsBinding.inflate(getLayoutInflater());
         setContentView(mBinding.getRoot());
 
         this.getTheme().applyStyle(R.style.FullScreen, false);
@@ -45,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         postsList = new ArrayList<>();
         postsList.add(videoData);
 
-        shortsAdapter = new ShortsAdapter(MainActivity.this, postsList);
+        shortsAdapter = new ShortsAdapter(DisplayShortsActivity.this, postsList);
         mBinding.videoVP.setAdapter(shortsAdapter);
 
         Retrofit retrofit= new Retrofit.Builder()

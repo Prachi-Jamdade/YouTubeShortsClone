@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -41,7 +40,7 @@ public class ThumbnailAdapter extends RecyclerView.Adapter<ThumbnailAdapter.Thum
         holder.mBinding.descTV.setText(shorts.get(position).getCreator().getHandle());
 
         holder.itemView.setOnClickListener(v -> {
-            Intent intent = new Intent(context, MainActivity.class);
+            Intent intent = new Intent(context, DisplayShortsActivity.class);
             intent.putExtra("short", (new Gson().toJson(shorts.get(position))));
             context.startActivity(intent);
         });
